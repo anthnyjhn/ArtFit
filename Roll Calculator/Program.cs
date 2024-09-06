@@ -1,6 +1,3 @@
-using System.Runtime.Serialization;
-using System.Dynamic;
-
 namespace Roll_Calculator
 {
     internal static class Program
@@ -33,14 +30,12 @@ namespace Roll_Calculator
         }
     }
 
-    public class CalculateMedia()
+    public class PrintBatch
     {
-        
-    }
-    
-    public class CsvLoader()
-    {
-        // Load Existing qoute Method 
-            // Return a list
+        public string Print_Batch_Number { get; set; }
+        public string Artwork_Id { get; set; }
+        public string Artwork_Name { get; set; }
+        public int Print_Quantity { get; set; }
+        public int Length_Used { get; set; }
     }
 }

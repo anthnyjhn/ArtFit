@@ -47,7 +47,6 @@
             label_artQuantity = new Label();
             artQuantity = new TextBox();
             generateData = new Button();
-            loadData = new Button();
             clearData = new Button();
             SuspendLayout();
             // 
@@ -249,19 +248,6 @@
             generateData.UseVisualStyleBackColor = false;
             generateData.Click += generateData_Click;
             // 
-            // loadData
-            // 
-            loadData.BackColor = Color.DarkGray;
-            loadData.FlatStyle = FlatStyle.Popup;
-            loadData.Font = new Font("Poppins", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            loadData.ForeColor = Color.White;
-            loadData.Location = new Point(254, 326);
-            loadData.Name = "loadData";
-            loadData.Size = new Size(118, 42);
-            loadData.TabIndex = 21;
-            loadData.Text = "Load";
-            loadData.UseVisualStyleBackColor = false;
-            // 
             // clearData
             // 
             clearData.BackColor = Color.Black;
@@ -283,7 +269,6 @@
             BackColor = Color.White;
             ClientSize = new Size(721, 450);
             Controls.Add(clearData);
-            Controls.Add(loadData);
             Controls.Add(generateData);
             Controls.Add(label_artQuantity);
             Controls.Add(artQuantity);
@@ -329,7 +314,6 @@
         private Label label_artQuantity;
         private TextBox artQuantity;
         private Button generateData;
-        private Button loadData;
         private Button clearData;
     }
 }
